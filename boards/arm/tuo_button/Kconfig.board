@@ -1,0 +1,3 @@
+config BOARD_TUO_BUTTON
+	bool "TUO Accessories Button PCB"
+	depends on SOC_NRF52840_QIAA

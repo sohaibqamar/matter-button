@@ -1,0 +1,13 @@
+mainmenu "Button"
+
+config BUTTON_GPIO
+	int "Button GPIO"
+	default 6
+
+config RESET_SWITCH_GPIO
+	int "Reset switch GPIO"
+	default 24
+
+source "${ZEPHYR_BASE}/../modules/lib/matter/config/nrfconnect/chip-module/Kconfig.features"
+source "${ZEPHYR_BASE}/../modules/lib/matter/config/nrfconnect/chip-module/Kconfig.defaults"
+source "Kconfig.zephyr"

@@ -1,0 +1,9 @@
+if BOARD_TUO_BUTTON
+
+config BOARD
+   default "tuo_button"
+
+config BT_CTLR
+	default BT
+
+endif # BOARD_TUO_BUTTON
